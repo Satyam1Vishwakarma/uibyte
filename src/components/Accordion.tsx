@@ -4,9 +4,11 @@ import type React from "react"
 import { useState } from "react"
 import { ChevronRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { twMerge } from "tailwind-merge"
 
 type AccordionProps = {
   name: string
+  className?: string
   children?: React.ReactNode
 }
 
@@ -19,7 +21,7 @@ export default function Accordion(props: AccordionProps) {
         onClick={() => setIsExpanded(!isExpanded)}
         className="flex w-full py-4 px-2 justify-between items-center text-left hover:bg-gray-50 transition-colors"
       >
-        <span className="font-medium text-gray-900">{props.name}</span>
+        <span className={twMerge("font-medium text-gray-900",props.className)}>{props.name}</span>
         <motion.div
           animate={{ rotate: isExpanded ? 90 : 0 }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
