@@ -10,6 +10,7 @@ type AvatarProps = {
   className?: string;
   onClick?: () => void;
 };
+
 export default function Avatar({
   src,
   loading = "lazy",

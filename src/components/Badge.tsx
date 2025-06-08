@@ -4,6 +4,7 @@ type BadgeProps = {
   children?: React.ReactNode;
   varient?: "outline" | "destructive" | "default";
 };
+
 export default function Badge(props: BadgeProps) {
   if (props.varient === "outline") {
     return (
