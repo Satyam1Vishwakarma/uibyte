@@ -8,7 +8,6 @@ type AvatarProps = {
   loading?: "lazy" | "eager";
   fallback?: string;
   className?: string;
-  onClick?: () => void;
 };
 
 export default function Avatar({
@@ -16,7 +15,7 @@ export default function Avatar({
   loading = "lazy",
   fallback = "?",
   className = "",
-  onClick,
+  ...rest
 }: AvatarProps) {
   const [isloaded, setisloaded] = useState(false);
 
@@ -26,7 +25,7 @@ export default function Avatar({
         "relative w-10 h-10 rounded-4xl border border-black/25 overflow-hidden flex justify-center items-center",
         className
       )}
-      onClick={onClick}
+      {...rest}
     >
       <img ///////// image needs to mounted in dom first to fire up onload and error
         src={src}
