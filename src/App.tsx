@@ -1,10 +1,9 @@
-import { Card } from "./components";
+import { Badge } from "./components";
 
 function App() {
-  
   return (
     <>
-      <div className="flex items-center justify-center h-screen"><Card>hello</Card></div>
+      <Badge varient="outline">asdasd</Badge>
     </>
   );
 }

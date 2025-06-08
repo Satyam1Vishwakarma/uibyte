@@ -1,9 +1,8 @@
-// Accordion.stories.tsx or Accordion.stories.jsx
 import {Card} from "../components";
 
 export default {
-  title: "Componets/Card",         // Fix typo: 'componnent' -> 'component'
-  component: Card,       // Use 'component' and point to the default Accordion export
+  title: "Componets/Card",
+  component: Card,
 };
 
 export const Cards = () => {

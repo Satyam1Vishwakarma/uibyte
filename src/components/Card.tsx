@@ -1,13 +1,13 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-type CardProp = {
+type CardProps = {
   className?: string;
   ref?: React.Ref<any>;
   children?: React.ReactNode;
 };
 
-export default function Card(props: CardProp) {
+export default function Card(props: CardProps) {
   return (
     <div
       ref={props.ref}
