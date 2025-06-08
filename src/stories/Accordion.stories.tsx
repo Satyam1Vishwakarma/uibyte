@@ -2,11 +2,11 @@
 import {Accordion} from "../components";
 
 export default {
-  title: "Accordion",         // Fix typo: 'componnent' -> 'component'
+  title: "Componets/Accordion",         // Fix typo: 'componnent' -> 'component'
   component: Accordion,       // Use 'component' and point to the default Accordion export
 };
 
-export const DefaultAccordions = () => {
+export const Accordions = () => {
   return (
     <>
       <Accordion name="click me 1">
