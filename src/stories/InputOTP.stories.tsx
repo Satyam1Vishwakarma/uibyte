@@ -25,8 +25,11 @@ function Inner() {
       resolve(isValid);
     });
   }
+  ///h-full	100% of parent’s height
+  ///min-h-screen	Minimum height = 100% of viewport height
+  ///But Storybook's parent containers (like body, html, or .sb-show-main) often don’t have a defined height
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen gap-y-3">
+    <div className="flex flex-col justify-center items-center min-h-screen gap-y-3"> 
       <InputOTP size="4" onVerify={verify}></InputOTP>
       <h1 className="text-sm">Hint: Enter 1,2,3,4</h1>
     </div>
