@@ -4,7 +4,7 @@ import type React from "react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-type ButtonProps = {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
   children: React.ReactNode;
 };
