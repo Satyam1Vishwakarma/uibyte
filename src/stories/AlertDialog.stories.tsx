@@ -1,7 +1,7 @@
 import { AlertDialog } from "../components";
 
 export default {
-  title: "Componets/AlertDialog",
+  title: "Components/AlertDialog",
   component: AlertDialog,
 };
 

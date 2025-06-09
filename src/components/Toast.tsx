@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import Card from "./Card";
+import { createPortal } from "react-dom";
 
 type ToastContextType = {
   showToast: (msg: string) => void;
@@ -9,7 +10,7 @@ type ToastContextType = {
 
 const ToastContext = createContext<ToastContextType | undefined>(undefined);
 
-export function Toast({ children }: { children: ReactNode }) {
+export function Toast({ children }: { children?: ReactNode }) {
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -29,11 +30,17 @@ export function Toast({ children }: { children: ReactNode }) {
   return (
     <ToastContext.Provider value={{ showToast }}>
       {children}
-      {show && (
-        <div className="fixed top-6 right-2 z-50 flex justify-end items-start">
-          <Card className="p-2 rounded-none px-5">{message}</Card>
-        </div>
-      )}
+      {typeof window !== "undefined" &&
+        createPortal(
+          show ? (
+            <div className="fixed top-6 right-2 z-[9999] flex justify-end items-start pointer-events-none">
+              <Card className="p-2 rounded-none px-5 pointer-events-auto">
+                {message}
+              </Card>
+            </div>
+          ) : null,
+          document.body
+        )}
     </ToastContext.Provider>
   );
 }

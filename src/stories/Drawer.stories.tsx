@@ -1,7 +1,7 @@
 import { Drawer } from "../components";
 
 export default {
-  title: "Componets/Drawer",
+  title: "Components/Drawer",
   component: Drawer,
 };
 

@@ -1,7 +1,7 @@
 import {Input} from "../components";
 
 export default {
-  title: "Componets/Input",
+  title: "Components/Input",
   component: Input,
 };
 

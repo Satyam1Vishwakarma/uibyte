@@ -1,7 +1,7 @@
 import {Accordion} from "../components";
 
 export default {
-  title: "Componets/Accordion",
+  title: "Components/Accordion",
   component: Accordion,
 };
 

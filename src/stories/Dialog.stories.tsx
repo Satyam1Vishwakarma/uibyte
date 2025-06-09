@@ -1,7 +1,7 @@
 import { Dialog } from "../components";
 
 export default {
-  title: "Componets/Dialog",
+  title: "Components/Dialog",
   component: Dialog,
 };
 

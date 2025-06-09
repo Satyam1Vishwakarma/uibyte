@@ -1,7 +1,7 @@
 import { Avatar } from "../components";
 
 export default {
-  title: "Componets/Avatar",
+  title: "Components/Avatar",
   component: Avatar,
 };
 
