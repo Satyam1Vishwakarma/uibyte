@@ -8,3 +8,4 @@ export { default as Checkbox } from "./Checkbox";
 export { default as Dialog } from "./Dialog";
 export { default as Drawer } from "./Drawer";
 export { default as Input } from "./Input";
+export { default as InputOTP } from "./InputOTP";
