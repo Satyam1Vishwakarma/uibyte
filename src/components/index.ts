@@ -6,3 +6,4 @@ export { default as AlertDialog } from "./AlertDialog";
 export { default as Button } from "./Button";
 export { default as Checkbox } from "./Checkbox";
 export { default as Dialog } from "./Dialog";
+export { default as Drawer } from "./Drawer";

@@ -1,9 +1,11 @@
-import { Checkbox } from "./components";
+import { Checkbox, Drawer } from "./components";
 
 function App() {
   return (
     <>
-      <Checkbox>Do you agree with terms anda conditions</Checkbox>
+      <Drawer name="Click me 1" postion="top">
+        <h1>Do you really want to learn React</h1>
+      </Drawer>
     </>
   );
 }
