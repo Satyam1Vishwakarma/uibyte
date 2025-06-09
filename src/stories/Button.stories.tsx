@@ -5,7 +5,7 @@ export default {
   component: Button,
 };
 
-export const Badges = () => {
+export const Buttons = () => {
   return (
     <div className="flex flex-col gap-y-3">
       <Button>deafult</Button>

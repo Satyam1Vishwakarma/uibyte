@@ -6,7 +6,7 @@ export default {
   component: InputOTP,
 };
 
-export const Inputs = () => {
+export const InputOTPs = () => {
   function verify(otp: string): Promise<boolean> {
     return new Promise((resolve) => {
       console.log("Checking OTP:", otp);

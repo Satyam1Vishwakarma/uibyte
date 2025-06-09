@@ -5,7 +5,7 @@ export default {
   component: Checkbox,
 };
 
-export const Cards = () => {
+export const Checkboxes = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <Checkbox>Do you agree with terms and conditions</Checkbox>
